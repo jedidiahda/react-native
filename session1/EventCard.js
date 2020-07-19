@@ -56,16 +56,16 @@ const styles = StyleSheet.create({
 });
 
 
-export default function EventCard({ event }) {
+export default function EventCard({ event , onPress }) {
   const {
     days,
     hours,
     minutes,
     seconds
   } = getCountdownParts(event.date);
-
+  console.log(event)
   return (
-    <TouchableOpacity >
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.card}>
         <View style={styles.cardHeader}>
           <Text style={styles.title}>{event.title}</Text>
