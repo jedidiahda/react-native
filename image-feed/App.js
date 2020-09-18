@@ -3,7 +3,6 @@ import React from 'react';
 import Constants from 'expo-constants';
 import { AsyncStorage, StyleSheet, Text, View, Platform, Modal } from 'react-native';
 import Feed from './screen/Feed';
-import CardList from './components/CardList';
 import Comments from './screen/Comments';
 
 const items = [
